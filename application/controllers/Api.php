@@ -11,7 +11,7 @@ class Api extends RestController
                $this->load->model('users_model');
 
        }    
-       public function getuserdata_get(){
+       public function userdata_get(){
 
            $res = [];
            $res  =  $this->users_model->read();
@@ -32,7 +32,7 @@ class Api extends RestController
            }
        }
 
-    public function updateUserData_put(){
+    public function userData_put(){
 
        $id = $this->uri->segment(3);
 
@@ -67,7 +67,7 @@ class Api extends RestController
         
     }
 
-    public function insertUserData_post(){
+    public function userData_post(){
 
         try {
             // $body = file_get_contents('php://input');
@@ -106,7 +106,7 @@ class Api extends RestController
             print_r($e->getMessage());
        }
     }
-       public function deleteUserData_delete(){
+       public function userData_delete(){
            $id   =  $this->uri->segment(3);
            $res  =  $this->users_model->delete($id);
 

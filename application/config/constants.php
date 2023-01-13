@@ -84,13 +84,13 @@ defined('EXIT_DATABASE')       OR define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
-defined('GET_API')             OR define('GET_API', 'http://webapi.com/api/getdata');
+defined('GET_API')             OR define('GET_API', 'http://webapi.com/api/userdata');
 
-defined('DELETE_API')          OR define('DELETE_API', 'http://webapi.com/api/deleteuserdata/');
+defined('DELETE_API')          OR define('DELETE_API', 'http://webapi.com/api/userdata/');
 
-defined('INSERT_API')          OR define('INSERT_API', 'http://webapi.com/api/insertdata/');
+defined('INSERT_API')          OR define('INSERT_API', 'http://webapi.com/api/userdata/');
 
-defined('UPDATE_API')          OR define('UPDATE_API', 'http://webapi.com/api/updatedata/');
+defined('UPDATE_API')          OR define('UPDATE_API', 'http://webapi.com/api/userdata/');
 
 
 
